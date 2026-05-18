@@ -1,0 +1,79 @@
+{
+  "id": "4f402f2e-f582-48f3-9bd0-c9465297a9c1",
+  "version": "2.0",
+  "name": "wikipedia_search",
+  "url": "https://www.wikipedia.org/",
+  "tests": [{
+    "id": "0aad0f1e-81cb-407c-9251-799236cf670e",
+    "name": "Untitled",
+    "commands": [{
+      "id": "8777a233-492b-4fee-952c-d714da676473",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wikipedia.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd4c9b12-78fc-4e1a-a50a-618ac92057f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1078x747",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57f6dac7-d4fe-4bc2-829e-0a3c32debac7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('searchInput').value='software testing'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3259c121-4b84-4b1b-a449-35fc099a4617",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-search-icon",
+      "targets": [
+        ["css=.svg-search-icon", "css:finder"],
+        ["xpath=//form[@id='search-form']/fieldset/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b3ab274-1206-4d95-bc24-a5084255d35e",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Software testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e18278-ca8c-4f5d-a95e-6c6387277026",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#firstHeading .mw-page-title-main",
+      "targets": [
+        ["css=#firstHeading .mw-page-title-main", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']/span/span", "xpath:idRelative"],
+        ["xpath=//h1/span/span", "xpath:position"]
+      ],
+      "value": "Software testing"
+    }]
+  }],
+  "suites": [{
+    "id": "82a5e188-edfd-492e-9578-d808aea5835f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0aad0f1e-81cb-407c-9251-799236cf670e"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}

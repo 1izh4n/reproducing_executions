@@ -1,0 +1,71 @@
+{
+  "id": "455ef5d2-a73f-486c-828e-4a34ef3c7e62",
+  "version": "2.0",
+  "name": "wiki_english_navigation",
+  "url": "https://www.wikipedia.org/",
+  "tests": [{
+    "id": "d8707860-1b3d-4658-a846-ca5bb8c4094b",
+    "name": "Untitled",
+    "commands": [{
+      "id": "e48e89f1-42d9-4c45-a17a-0e22466fdf90",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wikipedia.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15037270-b564-405a-be16-878c2ab1e37b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1078x747",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb6345a0-023d-483a-86ed-7e454d23c4e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js-link-box-en > strong",
+      "targets": [
+        ["css=#js-link-box-en > strong", "css:finder"],
+        ["xpath=//a[@id='js-link-box-en']/strong", "xpath:idRelative"],
+        ["xpath=//a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cccd446d-aff2-40c0-9453-bee4da47ea08",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ca-viewsource span",
+      "targets": [
+        ["css=#ca-viewsource span", "css:finder"],
+        ["xpath=//li[@id='ca-viewsource']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/nav/div/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'View source')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f616bb1b-61a6-468c-8757-8eb19a45647f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ca-history span",
+      "targets": [
+        ["css=#ca-history span", "css:finder"],
+        ["xpath=//li[@id='ca-history']/a/span", "xpath:idRelative"],
+        ["xpath=//nav/div/div/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'View history')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0c1c9d00-a3df-4440-a1b7-73038f7d3e0c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d8707860-1b3d-4658-a846-ca5bb8c4094b"]
+  }],
+  "urls": ["https://todomvc.com/examples/react/dist/", "https://www.w3schools.com/howto/howto_js_tabs.asp", "https://www.saucedemo.com/?utm_source=chatgpt.com", "https://www.wikipedia.org/"],
+  "plugins": []
+}

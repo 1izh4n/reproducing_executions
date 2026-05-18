@@ -1,0 +1,87 @@
+{
+  "id": "455ef5d2-a73f-486c-828e-4a34ef3c7e62",
+  "version": "2.0",
+  "name": "udel_admissions_navigation",
+  "url": "https://www.udel.edu/",
+  "tests": [{
+    "id": "d8707860-1b3d-4658-a846-ca5bb8c4094b",
+    "name": "Untitled",
+    "commands": [{
+      "id": "32845d37-4ec8-4e56-813f-225528918a79",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.udel.edu/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f5d1724-e262-4972-8dba-482ce3395ed1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1078x747",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e8db466-da26-4b8d-8bb1-0db0a7a30002",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Graduate Admissions",
+      "targets": [
+        ["linkText=Graduate Admissions", "linkText"],
+        ["css=.col-xs-5 li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Graduate Admissions')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/academics/colleges/grad/')])[3]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd9de11e-dcc4-4293-aae0-33e23284a83b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cq-dd-paragraph:nth-child(1) > .callToActionComponent a",
+      "targets": [
+        ["css=.cq-dd-paragraph:nth-child(1) > .callToActionComponent a", "css:finder"],
+        ["xpath=//div[@id='main-content']/div[2]/div[2]/div[2]/div/div/div[2]/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/academics/colleges/grad/prospective-students/programs/')])[3]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b285499d-95e9-4d32-83f2-445c9ce77e14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.degreeTypeButton:nth-child(2)",
+      "targets": [
+        ["css=.degreeTypeButton:nth-child(2)", "css:finder"],
+        ["xpath=//button[@value='doctorate']", "xpath:attributes"],
+        ["xpath=//div[@id='degreeSelection']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Doctorate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5abc1cec-dc29-4d7d-8cb4-544fc9612257",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Computer Science",
+      "targets": [
+        ["linkText=Computer Science", "linkText"],
+        ["css=.math-engineering-container:nth-child(40) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Computer Science')])[2]", "xpath:link"],
+        ["xpath=//div[@id='directoryList-links-component']/div/li[40]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/academics/colleges/grad/prospective-students/programs/computer-science/')]", "xpath:href"],
+        ["xpath=//li[40]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0c1c9d00-a3df-4440-a1b7-73038f7d3e0c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d8707860-1b3d-4658-a846-ca5bb8c4094b"]
+  }],
+  "urls": ["https://todomvc.com/examples/react/dist/", "https://www.w3schools.com/howto/howto_js_tabs.asp", "https://www.saucedemo.com/?utm_source=chatgpt.com", "https://www.wikipedia.org/", "https://www.udel.edu/"],
+  "plugins": []
+}

@@ -1,0 +1,164 @@
+{
+  "id": "aef20ce7-d495-40c4-8114-00af53dd6d9b",
+  "version": "2.0",
+  "name": "GUI_Input_Reproduction",
+  "url": "http://primus.nss.udel.edu/CoursesSearch/",
+  "tests": [{
+    "id": "b34ede5e-5ff2-45a4-94aa-274bb2681f2d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "1f5ab0f0-d845-4e0b-b387-5ced05d72e94",
+      "comment": "",
+      "command": "open",
+      "target": "https://primus.nss.udel.edu/CoursesSearch/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ce7727e-ad49-4640-9dd5-3d041693b896",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1078x747",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82b561df-2049-4b86-b92b-b95a61b5be40",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=#loginItem > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//li[@id='loginItem']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://udapps.nss.udel.edu/CoursesSearch/login.jsp')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aae2aa28-1844-4d5d-8065-7578349fc8a5",
+      "comment": "",
+      "command": "select",
+      "target": "id=term",
+      "targets": [],
+      "value": "label=2026 Spring (2263)"
+    }, {
+      "id": "5ef63d58-b8fa-4f7e-96c0-47e39aa38bbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#term > option:nth-child(2)",
+      "targets": [
+        ["css=#term > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='2263']", "xpath:attributes"],
+        ["xpath=//select[@id='term']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'2026 Spring (2263)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e4533a8-0da0-43dc-b800-42d054eb5538",
+      "comment": "",
+      "command": "click",
+      "target": "id=course_number",
+      "targets": [
+        ["id=course_number", "id"],
+        ["name=course_sec", "name"],
+        ["css=#course_number", "css:finder"],
+        ["xpath=//input[@id='course_number']", "xpath:attributes"],
+        ["xpath=//form[@id='itwd-validate']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1798fa43-d7c9-47cd-92f2-29bebd1276a3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('course_number').value='CISC615'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80bacec2-0232-4ae2-bee9-6f0ccd03abbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='itwd-validate']/div/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86062a41-48c5-432c-9904-675f19c400a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CISC615010",
+      "targets": [
+        ["linkText=CISC615010", "linkText"],
+        ["css=.coursenum", "css:finder"],
+        ["xpath=//a[contains(text(),'CISC615010')]", "xpath:link"],
+        ["xpath=//table[@id='results-2263']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'courseInfo?&courseid=302179&offernum=1&term=2263&session=1&section=010')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CISC615010')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce9daa1d-7a18-4d75-b552-b29bd4cfcfa6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Clause,Jim",
+      "targets": [
+        ["linkText=Clause,Jim", "linkText"],
+        ["css=.itwd-mailto", "css:finder"],
+        ["xpath=//a[contains(text(),'Clause,Jim')]", "xpath:link"],
+        ["xpath=//div[@id='instructor']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:CLAUSE@UDEL.EDU')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clause,Jim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0287ddaf-fb8b-413b-9706-83c2b1f89a0f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Clause,Jim",
+      "targets": [
+        ["linkText=Clause,Jim", "linkText"],
+        ["css=.itwd-mailto", "css:finder"],
+        ["xpath=//a[contains(text(),'Clause,Jim')]", "xpath:link"],
+        ["xpath=//div[@id='instructor']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:CLAUSE@UDEL.EDU')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clause,Jim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0503096a-4add-487f-80cc-08c73f48d73d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Clause,Jim",
+      "targets": [
+        ["linkText=Clause,Jim", "linkText"],
+        ["css=.itwd-mailto", "css:finder"],
+        ["xpath=//a[contains(text(),'Clause,Jim')]", "xpath:link"],
+        ["xpath=//div[@id='instructor']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:CLAUSE@UDEL.EDU')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clause,Jim')]", "xpath:innerText"]
+      ],
+      "value": "Clause,Jim"
+    }]
+  }],
+  "suites": [{
+    "id": "6a4f42fd-29b3-4467-896b-6f0150809435",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b34ede5e-5ff2-45a4-94aa-274bb2681f2d"]
+  }],
+  "urls": ["http://primus.nss.udel.edu/CoursesSearch/"],
+  "plugins": []
+}
